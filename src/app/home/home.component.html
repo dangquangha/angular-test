@@ -1,0 +1,14 @@
+<input type="text" [(ngModel)]="name">
+<input type="text" [(ngModel)]="age">
+
+<br>
+
+<p *ngIf="age > 20">Chào anh {{ name }}</p>
+<p *ngIf="age <= 20">Chào bạn {{ name }}</p>
+
+<p>
+    Đã từng làm ở công ty  
+</p>
+<div *ngFor="let company of companies; let i = index">
+    <li>{{ i + 1}} - {{ company }}</li>
+</div>
